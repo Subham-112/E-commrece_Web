@@ -1,0 +1,145 @@
+.course {
+  width: 100%;
+  min-height: 100vh;
+  /* color: #333; */
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  padding-top: 5rem;
+}
+
+.course-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.course-container h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.course-container .head {
+  font-weight: 400;
+  font-size: 5rem;
+  font-family: "Bangers", system-ui;
+  margin-top: 3rem;
+}
+
+.cards-grid {
+  max-width: 95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.each-card {
+  border-radius: 2rem;
+  color: #ece5ce;
+  background-color: #1e1e1e;
+  box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  transform: scale(1) translate(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-wh {
+  color: #ece5ce;
+  background-color: #1e1e1e;
+}
+
+.card-bl {
+  color: #333;
+  background-color: #ece5ce;
+}
+
+.each-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.5);
+}
+
+.each-card p {
+  font-size: 1.1rem;
+  border: 2px solid #333;
+  border-radius: 2rem;
+  padding: 0.7rem 1.5rem;
+  margin: 0;
+  /* margin-bottom: 0.5rem; */
+}
+
+.each-card .img-space {
+  width: 85%;
+  height: 60%;
+  border-radius: 0.5rem;
+  display: block;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.img-space img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.7rem;
+  transition: transform 0.5s ease;
+}
+
+.each-card:hover img {
+  transform: scale(1.03);
+}
+
+.each-card hr {
+  position: relative;
+  height: 3px;
+}
+
+.each-card hr::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -4px;
+  width: 0;
+  height: 3px;
+  z-index: 5;
+  transition: width 0.5s ease;
+}
+
+.bl {
+  border: none;
+  background-color: transparent;
+}
+
+.wh {
+  border: none;
+  background-color: black;
+}
+
+.bl::after {
+  background-color: #1e1e1e;
+  border: 1px solid black;
+}
+
+.wh::after {
+  background-color: yellow;
+  border: 2px solid yellow;
+}
+
+.each-card:hover hr::after {
+  width: 100%;
+}
+
+.learn-btn {
+  color: #333;
+  text-decoration: none;
+  border: 2px solid rgb(189, 189, 189);
+  border-radius: 2rem;
+  background-color: rgb(246, 227, 151);
+  padding: 1rem 1.5rem;
+}

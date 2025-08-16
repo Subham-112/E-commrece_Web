@@ -1,0 +1,57 @@
+.card-char {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px 0;
+  margin: 3rem 0;
+}
+
+.card-char .h1 {
+    width: 90%;
+    padding-left: 1rem;
+}
+
+.card-container {
+    width: 88.5%;
+  display: flex;
+  overflow: auto;
+  padding-bottom: 1rem;
+}
+
+.card-container::-webkit-scrollbar {
+    height: 5px;
+}
+.card-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+.card-container::-webkit-scrollbar-thumb {
+    border-radius: 220px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.card-items {
+  flex: 0 0 auto;
+  width: 200px;
+  margin-right: 20px;
+  background: #2c2c2c;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-items h1 {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.card-items p {
+  font-size: 1.2rem;
+  margin: 0;
+}

@@ -1,0 +1,100 @@
+.land-head {
+  width: 100%;
+  height: 12vh;
+  border-bottom: 2px solid #23232310;
+  backdrop-filter: blur(30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.land-logo {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.land-logo .logo-bl {
+  color: #333;
+}
+
+.land-logo .logo-wh {
+  color: #ece5ce;
+}
+
+.land-route {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.land-route ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 3rem;
+}
+
+.land-route .theme {
+  font-size: 1.9rem;
+  border-radius: 0.6rem;
+  background-color: #d9d6cd;
+  padding: 0.3rem 1.5rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link-wh {
+  color: #ece5ce;
+}
+
+.link-bl {
+  color: #232323;
+}
+
+.land-route ul li {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.log-sin {
+  width: 20%;
+  height: 100%;
+  border-left: 2px solid #23232310;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.login {
+  color: #333;
+}
+
+.log-sin .login span {
+  font-size: 1.3rem;
+  border-radius: 15px;
+  background-color: #d9d6cd;
+  padding: 0.8rem 1.3rem;
+}
+
+.log-sin .sign span {
+  font-size: 1.3rem;
+  border-radius: 15px;
+  color: #d9d6cd;
+  background-color: #232323;
+  padding: 0.8rem 1.3rem;
+}
