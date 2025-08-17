@@ -3,6 +3,7 @@ import Course from "./Course";
 import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
+import NewCourse from "./New-Course";
 
 export default function LandingPage({ themeBtn, color }) {
   return (
@@ -10,6 +11,7 @@ export default function LandingPage({ themeBtn, color }) {
       <Header themeBtn={themeBtn} color={color} />
       <Hero color={color} />
       <Course color={color} />
+      <NewCourse color={color} />
       <Footer color={color} />
     </div>
   );
